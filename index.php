@@ -151,5 +151,8 @@ switch ($URI[0]) {
 		case '/TecnologyAdvance/index.php/guardar_proveedor':
 	        $proveedores->guardar_proveedor();
 		break;
+		case '/TecnologyAdvance/index.php/ingresar_pedido':
+	        $controlador->ingresar_pedido_action();
+		break;
 	}
 

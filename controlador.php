@@ -126,8 +126,8 @@ function guardar_detalle_factura_action(){
 }
 
 function Listado_factura_action(){
-      $factura2 = new Factura();
-      $facturas2 =$factura2->Consultar_facturas();
+      $facturas32 = new Factura();
+      $facturas32 =$factura2->Consultar_facturas();
        require "Plantillas/listar_facturas.php";
 
 }
@@ -172,6 +172,15 @@ function  nuevo_pedido_action(){
   $prod2=new Producto();
 $producto_base2=$prod2->consultar_productos();
 require "plantillas/new_pedido.php";
+
+}
+function ingresar_pedido_action(){
+      $id=$_POST['cod_pro'];
+      $cantidad=$_POST['cantidad'];
+      $factura3 = new Factura();
+      $factura3 =$factura3->New_pedido($id,$cantidad);
+
+
 }
 
 }

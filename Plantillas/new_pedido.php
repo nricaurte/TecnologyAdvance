@@ -7,7 +7,7 @@
   </div>
 <div class="panel-body">
 
-     <form role="form" method="post"  action="consultar_user">     
+     <form role="form" method="post"  action="ingresar_pedido">     
         
         <div class="form-group">
      
@@ -21,10 +21,10 @@
   
     <div class="form-group">
           <label >Cantidad</label>
-          <input type="txt" class="form-control" id="Cantidad" name="Cantidad" placeholder="Cantidad">
+          <input type="txt" class="form-control" id="cantidad" name="cantidad" placeholder="Cantidad">
         </div>
 
-
+<center>    <button type="submit" class="btn btn-default btn-primary">Ingresa Pedido</button></center>
 </form>
 </div>
  </div></div>

@@ -5,8 +5,10 @@ class Factura extends Conexion_DB{
 private  $extraido;
 private  $consulta;
 private  $consulta5;
+private  $consulta6;
 private  $resultado;
 private  $resultado2;
+private  $producto;
 function consultar_suma_hecho($id){
  $this->conexion=$this->conectar_base_de_datos();
   $this->consulta = "SELECT cantidade FROM inventarios where descripcion='hecho' and id_producto='$id' ";
@@ -80,6 +82,18 @@ function Consultar_facturas(){
  $this->extraido=$this->Estrae_todo_registro("factura");
  return $this->extraido;
 
+}
+function New_pedido($id,$cantidad){
+ $this->conexion=$this->conectar_base_de_datos();
+ $producto=$this->Estrae_registro("producto","id_producto",$id);
+ echo  $producto['descripcion'];
+ $f=strftime("%Y-%m-%d");
+ $sum=$this->consultar_suma_hecho($id)-$this->consultar_suma_venta($id);
+
+ $this->consulta6="INSERT INTO inventarios VALUES ('','".($producto['id_producto'])."','hecho','$f','".($producto['precio'])."','$cantidad','".($producto['precio']*$cantidad)."','0','0','".($sum+$cantidad)."','".($producto['precio'])."','".($producto['precio']*($sum+$cantidad))."')";
+ $this->resultado=mysqli_query($this->conexion,$this->consulta6);
+ $this->Cerrar_conexion($this->conexion);
+  header("location: nuevo_pedido");
 }
 
 }
