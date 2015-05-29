@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fajas RosyWar</title>
+    <title>Tecnology Advance</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="/TecnologyAdvance/css/css/bootstrap.css">
       <link rel="stylesheet" href="/TecnologyAdvance/css/css/estilos.css">
