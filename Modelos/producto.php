@@ -59,18 +59,30 @@ function  guardar_producto(){
 
 function modificar_producto(){
           $this->conexio=$this->conectar_base_de_datos();
-          if(!is_null($_FILES['archivoe']['name']) ){
-		  $id = $_POST['id_producto'];
-		  $nombre = $_POST['nombre'];
-		  $descripcion = $_POST['descripcion'];
-		  $precio = $_POST['precio'];
-		  $especificaciones= $_POST['especificaciones'];
-          $this->consult =  "UPDATE producto Set nombre='$nombre',descripcion='$descripcion',especificaciones='$especificaciones',precio='$precio' where id_producto='$id'"; 
+           
+           $nombre_a=$_FILES['archivo']['name'];
+           $destino="archivo/".$nombre_a;
+           $ubicacion_temp=$_FILES['archivo']['tmp_name']; 
+           move_uploaded_file($ubicacion_temp,$destino);
+
+		       $id = $_POST['id_producto'];
+		       $nombre = $_POST['nombre'];
+		       $descripcion = $_POST['descripcion'];
+		       $precio = $_POST['precio'];
+		       $especificaciones= $_POST['especificaciones'];
+           $archivo_viejo=$_POST['archivo_v'];
+         
+         
+          if(empty($nombre_a)){
+          $destino=$archivo_viejo;
+          }
+
+          $this->consult =  "UPDATE producto Set nombre='$nombre',descripcion='$descripcion',especificaciones='$especificaciones',precio='$precio' , archivo='$destino' where id_producto='$id'"; 
           $this->result=mysqli_query($this->conexio,$this->consult);
           $this->Cerrar_conexion($this->conexio);
           header("location: productos");
 
-}
+
 }
 }
 ?>

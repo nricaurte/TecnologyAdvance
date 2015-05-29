@@ -92,11 +92,11 @@
             <a class="btn btn-circle btn-circle-twitter"><i class="icon icon-twitter"></i></a>
             <a class="btn btn-circle btn-circle-googleplus"><i class="icon icon-googleplus"></i></a> 
             <a class="btn btn-circle btn-circle-pinterest"><i class="icon icon-pinterest"></i></a> 
-            <p class="color1">Copyright &copy 2014 Tecnology Advance</p>
+            <p class="color1">Copyright &copy 2015 Tecnology Advance</p>
                 </div>      
                  <div class="col-xs-12 col-sm-6 col-md-6">
-                        <a href="">About us</a> |
-                        <a href="">Contacto</a>|
+                        <a href="/TecnologyAdvance/index.php/aboutus">About us</a> |
+                        <a href="/TecnologyAdvance/index.php/contacto">Contacto</a>|
                         <a href="">Noticias</a>|
                         <a href="">Ayuda</a>
                 </div>  

@@ -10,7 +10,7 @@
     		  		<div class='panel-body'>
     		  			<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
 				           	<h3>Descripcion : <?php echo $row['descripcion'] ?></h3>
-                                    <h3>Descripcion : <?php echo $row['especificaciones'] ?></h3>
+                                    <h3>Especificaciones : <?php echo $row['especificaciones'] ?></h3>
 				           	<h3>Precio : <?php echo $row['precio'] ?></h3>
                        
                         </div>

@@ -126,8 +126,8 @@ function guardar_detalle_factura_action(){
 }
 
 function Listado_factura_action(){
-      $facturas32 = new Factura();
-      $facturas32 =$factura2->Consultar_facturas();
+      $facturas2 = new Factura();
+      $facturas2 =$facturas2->Consultar_facturas();
        require "Plantillas/listar_facturas.php";
 
 }

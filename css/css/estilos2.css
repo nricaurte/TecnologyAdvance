@@ -10,6 +10,10 @@
     position: fixed;
     top: 200px;
 }
+@font-face{
+      font-family:OpenSans-Light; 
+      src:url(/p/css/OpenSans-Light.ttf);
+}
 #social-bar ul{
     list-style: none;
 }

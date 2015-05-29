@@ -45,6 +45,7 @@
                document.getElementById('descripcion').value =datos['descripcion'];
                document.getElementById('especificaciones').value =datos['especificaciones'];
                document.getElementById('precio').value =datos['precio'];
+               document.getElementById('archivo_v').value =datos['archivo'];
               }
               )
             }
@@ -70,7 +71,8 @@
       <div class="modal-body">
           <form action="modificar_producto" method="post" nanme="formu" enctype="multipart/form-data">
                         <label for="">Foto</label>
-            <input type="file" name="archivoe" id="archivoe">
+            <input type="file" name="archivo" id="archivoe">
+             <input type="hidden" name="archivo_v" id="archivo_v">
               <label for="">ID</label>
             <input type="text" class="form-control" name="id_producto" id="id_producto" placeholder="id_producto"/>
             <label for="">Nombre</label>
