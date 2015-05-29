@@ -51,8 +51,9 @@
           <div class="main">
             <div class="slides">
               <img class="img-responsive " src="/TecnologyAdvance/img/img1.jpg" alt="">
-              <img class="img-responsive "  src="/TecnologyAdvance/img/img4.jpg"alt="">
+              <img class="img-responsive "  src="/TecnologyAdvance/img/img2.jpg"alt="">
               <img class="img-responsive "  src="/TecnologyAdvance/img/img6.jpg" alt="">
+              <img class="img-responsive "  src="/TecnologyAdvance/img/img5.jpg" alt="">
             </div>
           </div>
     </div> 
