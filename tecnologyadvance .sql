@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2015 a las 14:49:24
+-- Tiempo de generación: 29-05-2015 a las 14:55:34
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `producto` (
 
 INSERT INTO `producto` (`id_producto`, `descripcion`, `nombre`, `especificaciones`, `cantidad`, `precio`, `archivo`) VALUES
 ('1394', '  Plateado,Usb3,14pulgadas', 'LenovaZ', 'Windows8,1,Procesador Intel i7 4 generacion,Nivia 820 2Gb ,5horas Bateria,2kg.089 de espesor', 0, '1859000', 'Archivo/lenovoz.png'),
-('1398', 'Plateado,Usb3,14pulgadas', 'Lenova 411', 'La pant', 0, '2540000', 'Archivo/411.png'),
+('1398', 'Plateado,Usb3,14pulgadas', 'Lenova 411', 'Windows 8.1 ,RAM 6Gbs,1tb,Inel cor I5', 0, '2540000', 'Archivo/411.png'),
 ('15031', 'Colores Negro y plateado', 'ASUS Transformer Boo', 'Winows 8.1\nUsb 3.0\nRma8gbs\n1Tb\n13 pulgadas\n', 0, '2300000', 'Archivo/asus1.png'),
 ('15032', '17 pulgadas', 'Dell Alienware 17 ', 'Windows 8.1Nivia 820 Getforce1TbInter cor I7', 0, '3200000', 'Archivo/alien7.png'),
 ('21572', 'Negro 1,14,15 pulgadas', 'Dell Serie 3000', 'Windows 8.1                                 Intel cor i3                                  Ram 6Gb   ,500Gbs                                  ', 43, '1200000', 'Archivo/s.png');
